@@ -90,7 +90,6 @@ fetch('https://free-to-play-games-database.p.rapidapi.com/api/game?id='+ id, opt
             <p class="scs-style">Screenshots</p>
             <div class="container">
             <div class="row">
-            <div class="scs-imgs">
             <div class="col-md-4 col-12">
 
             <img class="imgs-st" src="${data.screenshots[0].image}" >
@@ -103,7 +102,6 @@ fetch('https://free-to-play-games-database.p.rapidapi.com/api/game?id='+ id, opt
             <div class=" col-md-4 col-12">
             <img class="imgs-st" src="${data.screenshots[2].image}" >
 
-            </div>
             </div>
             </div> 
             </div>
