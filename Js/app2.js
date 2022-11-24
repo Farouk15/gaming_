@@ -92,15 +92,15 @@ fetch('https://free-to-play-games-database.p.rapidapi.com/api/game?id='+ id, opt
             <div class="row">
             <div class="col-md-4 col-12">
 
-            <img class="imgs-st" src="${data.screenshots[0].image}" >
+            <img style="text-align:center;" class="imgs-st" src="${data.screenshots[0].image}" >
 
             </div>
             <div class=" col-md-4 col-12">
-            <img class="imgs-st" src="${data.screenshots[1].image}" >
+            <img style="text-align:center;" class="imgs-st" src="${data.screenshots[1].image}" >
 
             </div>
             <div class=" col-md-4 col-12">
-            <img class="imgs-st" src="${data.screenshots[2].image}" >
+            <img style="text-align:center;" class="imgs-st" src="${data.screenshots[2].image}" >
 
             </div>
             </div> 
