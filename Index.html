@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G Website</title>
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+
+</head>
+<body>
+
+    <header class="header-st" >
+        <nav  style="background-color: rgb(204 204 204);" class="navbar navbar-expand-lg nav-display">
+            <div>
+                <a style="color: #24282F;" class="navbar-brand" id="Big-G" href="#">G </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+   
+            <div>
+                <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                    </div>
+                    <input id="searchbar" type="search" name="search" placeholder="Search..." onkeyup="search_animal()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                  </div>
+           </div>
+          </nav>
+
+
+    </header>
+    <div style="margin-top: 100px;" class="container">
+            
+        <h2><strong>All Games<span></span></strong></h2>                
+
+      </div>
+    
+        <div class="container">
+
+          
+            <div class="main">
+                <div class="wrapper">
+
+                    <div class="news"id="maincards">
+                
+
+                
+                
+                    </div>
+                
+                </div>
+            </div>
+
+
+        </div>
+
+        <footer>
+                <div class="container">
+                <div class="py-5">
+                    <h3 id="dev1">
+                        Developed by Farooq
+                    </h3>
+                </div>
+
+            </div>
+        </footer>
+
+
+    
+</body>
+<script src="./Js/app.js"></script>
+<script>
+let cards = document.querySelectorAll('.box')
+    
+ 
+// JavaScript code
+function search_animal() {
+    let input = document.getElementById('searchbar').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('article');
+      
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display="none";
+        }
+        else {
+            x[i].style.display="list-item";                 
+        }
+    }
+}
+    
+    </script>
+
+</html>
