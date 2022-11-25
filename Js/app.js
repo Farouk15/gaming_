@@ -30,7 +30,7 @@ data.forEach(item=>{
         <a href="single.html" target="blank">
         <button id = "view" onclick= "get_id(${item.id})" class="btn btn-dark forbtn" >View More</button> 
         </a>  
-        <a target="blank" href="${item.freetogame_profile_url}"> <button class="btn btn-dark forbtn">Download</button></a>  
+        <a target="blank" href="${item.game_url}"> <button class="btn btn-dark forbtn">Download</button></a>  
 
         </p>
 
